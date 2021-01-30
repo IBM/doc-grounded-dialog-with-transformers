@@ -66,6 +66,7 @@ python -m torch.distributed.launch --nproc_per_node=2 knowledge_identification/r
     --get_utterances all
     --max_query_length 256
 ```
+For task to identify knowledge grounding for agent turns instead of user turns, add ```    --predict_agent```.
 
 ### Prediction 
 Example command to decode Doc2Dial test set with a model trained with the above setting:
@@ -87,6 +88,6 @@ python  $codedir/knowledge_identification/run_doc2dial.py
     --get_utterances all
     --max_query_length 256
 ```
-
+For task to identify knowledge grounding for agent turns instead of user turns, add ```    --predict_agent```.
 
 
